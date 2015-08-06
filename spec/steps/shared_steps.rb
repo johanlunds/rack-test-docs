@@ -7,7 +7,7 @@ step "a file named :filename with the contents:" do |filename, contents|
 end
 
 step "I run `rspec`" do
-  @rspec_output = `rspec`
+  @rspec_output = `rspec 2>&1`
   @exit_status = $?.exitstatus
 end
 
