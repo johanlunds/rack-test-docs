@@ -7,7 +7,7 @@ Feature: Doc generation from Rails request specs
       """
       require 'rails_helper'
 
-      RSpec.describe 'SMS Verifications', type: :request do
+      RSpec.describe "Posts REST API", type: :request do
         describe "GET /posts" do
           it "returns all posts" do
             get posts_path
@@ -20,7 +20,7 @@ Feature: Doc generation from Rails request specs
     Then all tests should pass
     And a file should exist at "docs/requests/posts_requests.md" with the contents:
       """
-      # SMS Verifications
+      # Posts REST API
 
       ## GET /posts
 
