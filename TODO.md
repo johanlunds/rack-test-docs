@@ -7,6 +7,8 @@
     config.add_formatter RackTestDocs::RSpecFormatter
   end
 
+  Also need to make sure to specify at least one other formatter (so Rspec actually prints something).
+
   Add to Gemfile: `gem 'rack-test-docs', require: 'rack_test_docs'`
 
 

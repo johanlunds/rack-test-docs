@@ -3,7 +3,7 @@ Feature: Doc generation from Rails request specs
     Given I am currently in my example Rails-app
 
   Scenario: A request spec with a GET request
-    Given a file named "spec/requests/posts_requests_spec.rb" with the contents:
+    Given a file named "spec/requests/posts_spec.rb" with the contents:
       """
       require 'rails_helper'
 
@@ -18,7 +18,7 @@ Feature: Doc generation from Rails request specs
       """
     When I run `rspec`
     Then all tests should pass
-    And a file should exist at "docs/requests/posts_requests.md" with the contents:
+    And a file should exist at "docs/requests/posts.md" with the contents:
       """
       # Posts REST API
 
