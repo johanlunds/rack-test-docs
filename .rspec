@@ -1,3 +1,4 @@
 --format documentation
 --color
 -r turnip/rspec
+--exclude-pattern spec/fixtures/**/*
