@@ -2,6 +2,7 @@ PATH
   remote: ../../../
   specs:
     rack-test-docs (0.1.0)
+      rails (~> 4.2)
       rspec (~> 3.3)
 
 GEM

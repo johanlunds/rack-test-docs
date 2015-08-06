@@ -24,7 +24,7 @@ group :development, :test do
   gem 'byebug'
 
   gem 'rspec-rails'
-  gem 'rack-test-docs', path: '../../../'
+  gem 'rack-test-docs', require: 'rack_test_docs', path: '../../../'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'

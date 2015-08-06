@@ -1,6 +1,14 @@
 # TODOs
 
-Add Rubocop to .travis.yml
+* Add Rubocop to .travis.yml
+* Add instructions to README, add to spec_helper.rb in Rails-app
+
+  RSpec.configure do |config|
+    config.add_formatter RackTestDocs::RSpecFormatter
+  end
+
+  Add to Gemfile: `gem 'rack-test-docs', require: 'rack_test_docs'`
+
 
 # Implementation notes
 
