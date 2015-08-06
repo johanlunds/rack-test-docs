@@ -7,14 +7,15 @@ step "a file named :filename with the contents:" do |filename, contents|
 end
 
 step "I run `rspec`" do
-  @zero_exit_status = system "rspec"
+  @rspec_output = `rspec`
+  @exit_status = $?.exitstatus
 end
 
 step "all tests should pass" do
-  expect(@zero_exit_status).to be_true
+  expect(@exit_status).to eq(0), "expected rspec to exit successfully, but got output:\n#{@rspec_output}"
 end
 
 step "a file should exist at :filename with the contents:" do |filename, contents|
-  expect(File.exist?(filename)).to be_true
+  expect(File.exist?(filename)).to be true
   expect(IO.read(filename)).to eq(contents)
 end
