@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Rack::Test::Docs do
+describe RackTestDocs do
   it 'has a version number' do
-    expect(Rack::Test::Docs::VERSION).not_to be nil
+    expect(RackTestDocs::VERSION).not_to be nil
   end
 
   it 'does something useful' do
