@@ -11,7 +11,7 @@ module RackTestDocs
     end
 
     def start(_notification)
-      # FileUtils.mkdir_p File.join(@app_root, "docs/requests")
+      FileUtils.mkdir_p File.join(@app_root, "docs/requests")
     end
 
     def example_group_started(_notification)
