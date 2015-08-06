@@ -1,3 +1,7 @@
+# TODOs
+
+Add Rubocop to .travis.yml
+
 # Implementation notes
 
 custom formatter

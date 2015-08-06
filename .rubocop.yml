@@ -1,3 +1,9 @@
 AllCops:
   Exclude:
     - spec/fixtures/**/*
+
+Metrics/LineLength:
+  Max: 120
+
+Style/StringLiterals:
+  Enabled: false
